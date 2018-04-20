@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Piano Style</title>
+ <link rel="stylesheet" href="css/style.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
+<style>
+ .element {
+  animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #FF4136;
+  }
+}
+@media only screen and (max-width: 300px) {#main {margin-left: 0}}
+body{
+	font-family: 'Poiret One', cursive;
+	background: #2d3436;
+	color:white;
+	font-size: 24px;
+	overflow-y: hidden;
+}
+.button {
+	border:2px solid #636e72;
+	border-radius: 2px;
+	margin: 0px;
+	padding: 10px 45px 10px 45px;
+}
+.button:hover{
+	background: white;
+	color:black;
+}
+.card{
+  pointer-events: none;
+  transform: translateZ(0);
+  padding: 30px;
+  background: white;
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: flex;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+  position: relative;
+  
+  &:after{
+    content:" ";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 50%;
+    left:0;
+    bottom:-50px;
+    box-shadow: 0 30px 20px rgba(0,0,0,.3);
+    
+  }
+  
+  .card-content{
+    margin: auto;
+    text-align:center;
+    transform-style: preserve-3d;
+  }
+ 
+
+
+</style>
+  
+</head>
+
+<body class="element">
+ <div class='container animated wobble'>
+  <div class="col-sm-12">
+  <h1 class='title animated rubberBand'>Hey! I am Basic</h1><br><br><br><br>
+    <div class='line line__1 animated rubberBand'>
+      <div class='button  key__81'>Q</div>
+      <div class='button  key__87'>W</div>
+      <div class='button  key__69'>E</div>
+      <div class='button  key__82'>R</div>
+      <div class='button  key__84'>T</div>
+      <div class='button  key__89'>Y</div>
+      <div class='button  key__85'>U</div>
+      <div class='button  key__73'>I</div>
+      <div class='button  key__79'>O</div>
+      <div class='button  key__80'>P</div>
+    </div><br>
+    <div class='line line__2 animated wobble'>
+      <div class='button key__65'>A</div>
+      <div class='button key__83'>S</div>
+      <div class='button key__68'>D</div>
+      <div class='button key__70'>F</div>
+      <div class='button key__71'>G</div>
+      <div class='button key__72'>H</div>
+      <div class='button key__74'>J</div>
+      <div class='button key__75'>K</div>
+      <div class='button key__76'>L</div>
+    </div><br>
+    <div class='line line__3 animated rubberBand'>
+      <div class='button key__90'>Z</div>
+      <div class='button key__88'>X</div>
+      <div class='button key__67'>C</div>
+      <div class='button key__86'>V</div>
+      <div class='button key__66'>B</div>
+      <div class='button key__78'>N</div>
+      <div class='button key__77'>M</div>
+    </div>
+
+    <audio class='audio__81' src='https://dl.dropboxusercontent.com/s/035w77gt6j4rq1z/01.mp3?dl=0'></audio>
+    <audio class='audio__87' src='https://dl.dropboxusercontent.com/s/jnegmum0xpdxcmn/02.mp3?dl=0'></audio>
+    <audio class='audio__69' src='https://dl.dropboxusercontent.com/s/h8bjo8rdczjemyz/03.mp3?dl=0'></audio>
+    <audio class='audio__82' src='https://dl.dropboxusercontent.com/s/wk7hjgc4twvh2xa/04.mp3?dl=0'></audio>
+    <audio class='audio__84' src='https://dl.dropboxusercontent.com/s/6fl2tvz7vnu0p5j/05.mp3?dl=0'></audio>
+    <audio class='audio__89' src='https://dl.dropboxusercontent.com/s/elmqjsp3a3mr8od/06.mp3?dl=0'></audio>
+    <audio class='audio__85' src='https://dl.dropboxusercontent.com/s/s00otckrx7290oc/07.mp3?dl=0'></audio>
+    <audio class='audio__73' src='https://dl.dropboxusercontent.com/s/4uw6x70dgsrd4c8/08.mp3?dl=0'></audio>
+    <audio class='audio__79' src='https://dl.dropboxusercontent.com/s/9w67y74kskeovgl/09.mp3?dl=0'></audio>
+    <audio class='audio__80' src='https://dl.dropboxusercontent.com/s/twkvpiakbb4lq4e/10.mp3?dl=0'></audio>
+    <audio class='audio__65' src='https://dl.dropboxusercontent.com/s/4o0osz91eymso0h/11.mp3?dl=0'></audio>
+    <audio class='audio__83' src='https://dl.dropboxusercontent.com/s/oumzybjtrl9mjts/12.mp3?dl=0'></audio>
+    <audio class='audio__68' src='https://dl.dropboxusercontent.com/s/2gdk43w0ay4txwg/13.mp3?dl=0'></audio>
+    <audio class='audio__70' src='https://dl.dropboxusercontent.com/s/mtt3wesbdlowtbl/14.mp3?dl=0'></audio>
+    <audio class='audio__71' src='https://dl.dropboxusercontent.com/s/eapm34a45neesom/15.mp3?dl=0'></audio>
+    <audio class='audio__72' src='https://dl.dropboxusercontent.com/s/7t4bwiaomymqct6/16.mp3?dl=0'></audio>
+    <audio class='audio__74' src='https://dl.dropboxusercontent.com/s/m7yw7bqgyrpiu08/17.mp3?dl=0'></audio>
+    <audio class='audio__75' src='https://dl.dropboxusercontent.com/s/rhu6eq9ugjsbjwo/18.mp3?dl=0'></audio>
+    <audio class='audio__76' src='https://dl.dropboxusercontent.com/s/ywr20vp7tgjyyrh/19.mp3?dl=0'></audio>
+    <audio class='audio__90' src='https://dl.dropboxusercontent.com/s/8hyodo89nf4bnlc/20.mp3?dl=0'></audio>
+    <audio class='audio__88' src='https://dl.dropboxusercontent.com/s/iolyyuirxbrar0g/21.mp3?dl=0'></audio>
+    <audio class='audio__67' src='https://dl.dropboxusercontent.com/s/ajtx1pmlennr5q1/22.mp3?dl=0'></audio>
+    <audio class='audio__86' src='https://dl.dropboxusercontent.com/s/hq2ueudmsm69p52/23.mp3?dl=0'></audio>
+    <audio class='audio__66' src='https://dl.dropboxusercontent.com/s/c0v9gug6680hzsp/24.mp3?dl=0'></audio>
+    <audio class='audio__78' src='https://dl.dropboxusercontent.com/s/ene4r5lszrjn9lw/25.mp3?dl=0'></audio>
+    <audio class='audio__77' src='https://dl.dropboxusercontent.com/s/u9o6ofi20mldcss/26.mp3?dl=0'></audio>
+  </div>
+</div>
+    <script  src="js/index.js"></script>
+
+ <center><div class="text animated bounce" style="margin-top:50px;"><small>Designed By Amit Singh</small></div></center>
+  <center><div class="text animated hinge"><small><small><small>Thanks to CodePen</small></small></small></div></center>
+</body>
+
+</html>

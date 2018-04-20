@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body{
+  font-family: 'Source Sans Pro';
+  background-color: #999;
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  text-align: center;
+  font-size: 45px;
+}
+
+.keyboard{
+  margin: 0 10%;
+  background-color: #666;
+  border: 10px solid #333;
+  border-radius: 25px;
+  padding: 8px;
+}
+
+.line{
+  display: flex;
+  justify-content: space-around;
+  &__2{
+    margin: 0 4%;
+  }
+  &__3{
+    margin: 0 14.25%;
+  }
+}
+
+.key{
+  background-color: #111;
+  color: #fff;
+  padding: 15px;
+  font-size: 23px;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  margin: 5px;
+  flex: 1;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .keyboard{ margin: 20px; }
+  .title{ font-size: 30px; }
+}
+
+@media (max-width: 800px) {
+  .title{
+    font-size: 25px;
+  }
+  .keyboard{
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: #333;
+  }
+  .key{
+    font-size: 17px;
+    margin: 3px;
+    padding: 6px;
+    border-radius: 8px;
+    border-width: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .keyboard{
+    border-width: 3px;
+    padding: 5px;
+  }
+  .key{
+    font-size: 15px;
+    padding: 4px;
+  }
+  .title{
+    font-size: 20px;
+  }
+}
